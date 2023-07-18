@@ -1,5 +1,5 @@
 
-const Movie_list=[{
+export const Movie_list=[{
 	 id:1, 
      movieName:"Dear ZIndagi",
      movieYear:"2016",

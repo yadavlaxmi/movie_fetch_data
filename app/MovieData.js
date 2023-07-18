@@ -1,17 +1,18 @@
 import Like from "./Like";
 import Delete from "./Delete";
-function MovieData(props){
+
+const MovieData=({props,onDelete})=>{
 	return(
 		<>
 			<div className="movie_row">
 				<div className="movie_image">
-					<img src={props.data.image} class="image1"></img>
+					<img src={props.image} class="image1"></img>
 					<div class="box1">
 						<div class="inner_box2">
-							<text class="text8">{props.data.movieName}</text>
+							<text class="text8">{props.movieName}</text>
 						</div>
 						<div class="inner_box3">
-							<text class="text9">{props.data.movieYear}.{props.data.duration}   |   {props.data.gender} 									</text>
+							<text class="text9">{props.movieYear}.{props.duration}   |   {props.gender} 									</text>
 						</div>
 						
 									
@@ -19,13 +20,13 @@ function MovieData(props){
 							<text class="text10">Description</text>
 						</div>
 						<div class="inner_box5">
-							<text class="text11">{props.data. discription}</text>
+							<text class="text11">{props.discription}</text>
 						</div>	
 					</div>
 				</div>
 			</div>
 			<Like/>
-			<Delete/>
+			<Delete onDelete={onDelete}/>
 	</>
 	)
 }
