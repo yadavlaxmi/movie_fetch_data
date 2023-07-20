@@ -1,7 +1,7 @@
 import Like from "./Like";
 import Delete from "./Delete";
 
-const MovieData=({props,onDelete})=>{
+const MovieData=({props,onDelete,handleVoteUp,handleVoteDown,votes})=>{
 	return(
 		<>
 			<div className="movie_row">
@@ -25,7 +25,7 @@ const MovieData=({props,onDelete})=>{
 					</div>
 				</div>
 			</div>
-			<Like/>
+			<Like handleVoteUp={handleVoteUp} handleVoteDown={handleVoteDown} votes={votes}/>
 			<Delete onDelete={onDelete}/>
 	</>
 	)

@@ -432,4 +432,24 @@
 	text-transform: capitalize;
 	
 }
+.form{
+	background:#27273400;
+	color:white;
+	font-size:45px;
+	font-family:Kanit;
+	line-height:150%;
+	position:relative;
+	bottom:20px;
+	margin-left:10px;
 
+
+}
+.img{
+	height:72px;
+	 width:72px;
+	 background:#27273400;
+	 margin-left:450px;
+	 position:relative;
+	 bottom:5px
+
+}
